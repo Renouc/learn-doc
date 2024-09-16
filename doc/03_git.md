@@ -12,16 +12,6 @@ git tag -l "v1.0.*"
 
 > 列出所有以 v1.0 开头的标签
 
-## 查看标签信息
-
-```bash
-git show
-```
-
-```bash
-git show <tag>
-```
-
 ## 创建标签
 
 Git 支持两种标签：轻量标签（lightweight）与附注标签（annotated）
@@ -31,3 +21,19 @@ Git 支持两种标签：轻量标签（lightweight）与附注标签（annotate
 - 附注标签包含了关于标签的元数据（如作者、日期、注释等）
 
 ### 附注标签
+
+```bash
+git tag -a <tagname> -m <tagmessage>
+```
+
+> -m 选项指定了一条将会存储在标签中的信息。 如果没有为附注标签指定一条信息，Git 会启动编辑器要求你输入信息。
+
+### 轻量标签
+
+## 查看标签信息
+
+```bash
+git show <tagname>
+```
+
+> 通过使用 git show 命令可以看到标签信息和与之对应的提交信息
