@@ -1,18 +1,17 @@
 package main
 
-import "net/http"
+import (
+	"fmt"
+	"go-learn/array"
+)
 
 func main() {
-	// 创建一个HTTP服务器 并设置监听地址
-	server := &http.Server{
-		Addr: ":8080",
-	}
 
-	// 设置路由处理器
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("Hello, World!"))
-	})
+	// 创建一个整数类型的 Array
+	intArray := array.New[int]()
+	intArray.Push(1)
+	intArray.Push(2)
 
-	// 启动服务器 并监听端口
-	server.ListenAndServe()
+	fmt.Println("Int Array:", intArray) // 输出: Int Array: [1 2 3]
+
 }
