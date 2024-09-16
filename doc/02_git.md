@@ -113,3 +113,45 @@ git log
 ```bash
 git commit --amend
 ```
+
+## 查看远程仓库
+
+```bash
+git remote
+```
+
+```bash
+git remote -v
+```
+
+> -v 显示所有远程仓库的 URL
+
+```bash
+git remote show <remote>
+```
+
+> 显示指定远程仓库的信息
+
+## 添加远程仓库
+
+```bash
+git remote add <shortname> <url>
+```
+
+## 推送到远程仓库
+
+```bash
+git push <remote> <branch>
+```
+
+## 远程仓库重命名
+
+```bash
+git remote rename <oldname> <newname>
+```
+
+## 远程仓库删除
+
+```bash
+git remote rm <name>
+```
