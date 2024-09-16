@@ -74,6 +74,10 @@ git rm <file>
 git rm --cached <file>
 ```
 
+```bash
+git reset HEAD <file>
+```
+
 > 将文件从暂存区移除，但保留在工作目录中。
 
 ## 移动文件
@@ -104,6 +108,8 @@ git log
 
 - `-stat` 显示提交文件的修改统计
 
-## 撤销操作
+## 替换上一次提交
 
-<!-- third -->
+```bash
+git commit --amend
+```
