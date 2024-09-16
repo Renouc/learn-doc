@@ -93,3 +93,17 @@ git rm <file>
 
 git add <new-file>
 ```
+
+## 查看提交历史
+
+```bash
+git log
+```
+
+- `-p` 显示提交文件的修改内容
+
+- `-stat` 显示提交文件的修改统计
+
+## 撤销操作
+
+<!-- third -->
