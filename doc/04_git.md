@@ -73,3 +73,17 @@ git branch --no-merged
 ```
 
 > 显示未合并到当前分支的分支
+
+## 远程分支
+
+```bash
+ git ls-remote <remote>
+```
+
+> 显示远程分支
+
+```bash
+git remote show <remote>
+```
+
+> 显示远程分支的详细信息
