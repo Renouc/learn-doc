@@ -90,3 +90,17 @@ git remote show <remote>
 > # 显示远程分支的详细信息
 >
 > > > > > > > a9944f7 (feat: 更新 04_git.md)
+
+## 远程分支
+
+```bash
+ git ls-remote <remote>
+```
+
+> 显示远程分支
+
+```bash
+git remote show <remote>
+```
+
+> 显示远程分支的详细信息
