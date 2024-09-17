@@ -30,6 +30,22 @@ git tag -a <tagname> -m <tagmessage>
 
 ### 轻量标签
 
+```bash
+git tag <tagname>
+```
+
+> 创建轻量标签，不需要使用 -a、-s 或 -m 选项，只需要提供标签名字
+
+> 这时，如果在标签上运行 git show，你不会看到额外的标签信息。命令只会显示出提交信息
+
+## 后期打标签
+
+```bash
+git tag <tagname> <commit>
+```
+
+> 可以通过指定提交 ID 来为某个提交打标签
+
 ## 查看标签信息
 
 ```bash
@@ -37,3 +53,35 @@ git show <tagname>
 ```
 
 > 通过使用 git show 命令可以看到标签信息和与之对应的提交信息
+
+## 共享标签
+
+```bash
+git push origin <tagname>
+```
+
+> 将指定标签推送到远程仓库
+
+```bash
+git push origin --tags
+```
+
+> 将所有标签推送到远程仓库
+
+## 删除标签
+
+```bash
+git tag -d <tagname>
+```
+
+## 删除远程标签
+
+```bash
+git push origin :refs/tags/<tagname>
+```
+
+或者
+
+```bash
+git push origin --delete <tagname>
+```
