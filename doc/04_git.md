@@ -73,7 +73,12 @@ git branch --no-merged
 ```
 
 > 显示未合并到当前分支的分支
-> <<<<<<< HEAD
+
+## 分支重命名
+
+```bash
+git branch -m <new-branch>
+```
 
 ## 远程分支
 
@@ -88,8 +93,6 @@ git remote show <remote>
 ```
 
 > # 显示远程分支的详细信息
->
-> > > > > > > a9944f7 (feat: 更新 04_git.md)
 
 ## 远程分支
 
