@@ -2,7 +2,7 @@
 
 ## 工厂模式
 
-```js
+````js
 class Person {
   constructor(name, age) {
     this.name = name;
@@ -15,4 +15,12 @@ class Factory {
     return new Person(name, age);
   }
 }
-```
+## 代理模式
+
+```js
+const proxy = new Proxy(target, handler);
+const handler = {
+  get(target, property, receiver) {},
+};
+const target = {};
+````

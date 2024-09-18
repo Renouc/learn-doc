@@ -108,6 +108,18 @@ git log
 
 - `-stat` 显示提交文件的修改统计
 
+- `--decorate` 显示分支信息，如标签等；在最新版本中默认开启
+
+```bash
+git log --graph
+```
+
+> 显示提交历史树状图
+
+```bash
+git log --oneline --graph
+```
+
 ## 替换上一次提交
 
 ```bash
