@@ -7,12 +7,6 @@ git revert HEAD~3..HEAD
 # 撤销单个指定commit
 git revert [commitID]
 
-# 撤销多个指定commit
-git revert [commitID] [commitID] [commitID] ...
-
-# 撤销某次commit到某次commit之间的commit（左开右闭）
+# 撤销某次commit到某次commit之间的commit
 git revert [commitID]..[commitID]
-
-# 撤销某次commit到某次commit之间的commit（左右都包含）
-git revert [commitID]...[commitID]
 ```
